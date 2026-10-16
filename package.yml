@@ -1,0 +1,18 @@
+package: community.lazycat.app.oknote
+version: 3.2.7
+name: OKNote 笔记
+description: 自托管笔记应用，数据完全掌握在自己手里
+min_os_version: 1.5.0
+homepage: https://oknote.top
+author: wanpidadajuan
+license: MIT
+locales:
+  zh:
+    name: OKNote 笔记
+    description: 自托管笔记应用，数据完全掌握在自己手里
+  zh_CN:
+    name: OKNote 笔记
+    description: 自托管笔记应用，数据完全掌握在自己手里
+  en:
+    name: OKNote
+    description: A self-hosted note taking application

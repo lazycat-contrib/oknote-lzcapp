@@ -1,0 +1,40 @@
+version: 1
+
+project:
+  root: .
+  build_config: lzc-build.yml
+  package_file: package.yml
+  output: .lazycat-build/oknote.lpk
+  target_arch: amd64
+
+update:
+  strategy: publish
+  allow_downgrade: false
+  version_source:
+    type: image
+    image: oknote
+
+images:
+  - id: oknote
+    target: service
+    service: oknote
+    source: docker.io/wanpidadajuan/oknote
+    channel: stable
+    sort: semver
+    tag_regex: ^[0-9]+[.][0-9]+[.][0-9]+$
+    delivery:
+      mode: mirror
+      image_template: "docker.1ms.run/wanpidadajuan/oknote:{tag}"
+      require_digest_match: true
+
+stores:
+  official:
+    enabled: false
+    skip_if_version_exists: false
+    retry:
+      enabled: false
+  private:
+    enabled: true
+    skip_if_version_exists: true
+    name: OKNote 笔记
+    summary: 镜像加速模式自动跟上游 Docker Hub 版本发布的自托管笔记

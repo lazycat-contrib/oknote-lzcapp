@@ -1,0 +1,15 @@
+application:
+  subdomain: oknote
+  public_path:
+    - /
+  upstreams:
+    - location: /
+      backend: http://oknote:38080/
+
+services:
+  oknote:
+    # wanpidadajuan/oknote:3.2.7
+    image: docker.1ms.run/wanpidadajuan/oknote:3.2.7
+    binds:
+      - /lzcapp/var/data:/app/data
+      - /lzcapp/var/config:/app/config
