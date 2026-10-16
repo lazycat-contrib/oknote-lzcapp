@@ -1,7 +1,7 @@
 package: community.lazycat.app.oknote
 version: 3.2.7
-name: OKNote 笔记
-description: 自托管笔记应用，数据完全掌握在自己手里
+name: OKNote
+description: A self-hosted note taking application
 min_os_version: 1.5.0
 homepage: https://oknote.top
 author: wanpidadajuan
