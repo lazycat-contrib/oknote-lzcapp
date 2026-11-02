@@ -8,8 +8,8 @@ application:
 services:
   oknote:
     # wanpidadajuan/oknote:3.2.7
-    # upstream: docker.io/wanpidadajuan/oknote:3.2.7
-    image: docker.1ms.run/wanpidadajuan/oknote:3.2.7
+    # upstream: docker.io/wanpidadajuan/oknote:4.0.0
+    image: docker.1ms.run/wanpidadajuan/oknote:4.0.0
     binds:
       - /lzcapp/var/data:/app/data
       - /lzcapp/var/config:/app/config
