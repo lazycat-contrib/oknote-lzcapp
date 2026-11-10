@@ -1,5 +1,5 @@
 package: community.lazycat.app.oknote
-version: 4.0.1
+version: 4.0.6
 name: OKNote
 description: A self-hosted note taking application
 min_os_version: 1.5.0
